@@ -24,9 +24,17 @@ int start, end;
             printf("%d ", i);
         }
     }
+    
+    //print all palindrome numbers in range
+    printf("\nThe palindrome are:");
+    for (int i = start; i <= end; i++) {
+        if (isPalindrome(i) == 1) {
+            printf("%d ", i);
+        }
+    }
 
     //print all prime numbers in range
-    printf("\nThese are the Prime numbers:");
+    printf("\nThe prime numbers are:");
     for (int i = start; i <= end; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
@@ -34,19 +42,13 @@ int start, end;
     }
 
     //print all strong numbers in range
-    printf("\nThese are the strong numbers:");
+    printf("\nThe strong numbers are:");
     for (int i = start; i <= end; i++) {
         if (isStrong(i)) {
             printf("%d ", i);
         }
     }
 
-    //print all palindrome numbers in range
-    printf("\nThese are the palindrome numbers:");
-    for (int i = start; i <= end; i++) {
-        if (isPalindrome(i) == 1) {
-            printf("%d ", i);
-        }
-    }
+    
     return 0;
 }
