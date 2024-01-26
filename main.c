@@ -18,15 +18,15 @@ int start, end;
     }
 
     //print amstrong numbers
-    printf("These are the armstrong numbers:");
+    printf("The armstrong are:");
     for (int i = start; i <= end; i++) {
         if (isArmstrong(i)) {
             printf("%d ", i);
         }
     }
-    
+
     //print all palindrome numbers in range
-    printf("\nThe palindrome are:");
+    printf("\nThe palindrome numbers are:");
     for (int i = start; i <= end; i++) {
         if (isPalindrome(i) == 1) {
             printf("%d ", i);
